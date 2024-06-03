@@ -1,0 +1,17 @@
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./utilities/extend";
+
+@import "./utilities/reset";
+@import "./utilities/global";
+
+@import "./componets/header";
+@import "./page/main-atencionpersonalizada";
+@import "./page/main-blogsalud";
+@import "./page/main-consultas";
+@import "./page/main-empresas";
+@import "./page/main-planesdesalud";
+@import "./componets/footer";
+
+
+@import "./utilities/mediaQuerie";

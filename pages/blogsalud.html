@@ -17,19 +17,32 @@
 </head>
 
 <body>
-    <img src="../assets/img/logo-emergencias.jpeg" alt="logoemergencias" style="width: 40px;" align="right">
-    
-    <header class="menu">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./planesdesalud.html">Planes de salud</a></li>
-                <li><a href="./atencionpersonalizada.html">Atencion personalizada</a></li>
-                <li><a href="./consultas.html">Consultas</a></li>
-                <li><a href="./empresas.html">Empresas</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <nav class="navbar">
+            <img src="../assets/img/logo-emergencias.jpeg" alt="logoemergencias" style="width: 50px;" align="right">
 
+            <label class="labe_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
+                    <path
+                        d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                </svg>
+            </label>
+
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
+            <ul class="ul_links">
+                <li class="li_links"><a href="../index.html" class="link">Inicio</li>
+                <li class="li_links"><a href="../pages/planesdesalud.html" class="link">Planes de salud</a></li>
+                <li class="li_links"><a href="../pages/atencionpersonalizada.html" class="link">Atencion
+                        personalizada</a></li>
+                <li class="li_links"><a href="../pages/consultas.html" class="link">Consultas</a></li>
+                <li class="li_links"><a href="../pages/empresas.html" class="link">Empresas</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <section>
@@ -37,12 +50,21 @@
         <h1 class="colorFondo textcenter">Blog Salud</h1>
 
         <div class="grid">
-            <div class="gridimagen"><img src="../assets/img/Imagen1.jpeg" alt="Imagen1"></div>
-            <div class="gridimagen"><img src="../assets/img/Imagen2.jpeg" alt="Imagen2"></div>
-            <div class="gridimagen"><img src="../assets/img/Imagen3.jpeg" alt="Imagen3"></div>
-            <div class="gridimagen"><img src="../assets/img/Imagen4.jpeg" alt="Imagen4"></div>
-            <div class="gridimagen"><img src="../assets/img/Imagen5.jpeg" alt="Imagen5"></div>
-            <div class="gridimagen"><img src="../assets/img/Imagen6.jpeg" alt="Imagen6"></div>
+            <div class="slider">
+                <div class="imagen-list">
+                    <img src="../assets/img/Imagen1.jpeg" alt="imagen-item">
+                    <img src="../assets/img/Imagen2.jpg" alt="imagen-item">
+                    <img src="../assets/img/Imagen3.png" alt="imagen-item">
+                    <img src="../assets/img/Imagen4.jpg" alt="imagen-item">
+                    <img src="../assets/img/Imagen5.jpg" alt="imagen-item">
+                    <img src="../assets/img/Imagen6.jpg" alt="imagen-item">
+                </div>
+            </div>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb">
+                </div>
+            </div>
         </div>
 
         <h2 class="colorfondo2 textcenter"> Actualidad de Salud a tu alcance</h2>
@@ -118,9 +140,9 @@
 
 </footer>
 
-    <!-- script bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-        
+<!-- script bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </html>
