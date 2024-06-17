@@ -1,41 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+*
 
-/*EMERGENCIAS*/
+/*URGENCIAS TELEFONO*/
 h1 {
     color: white;
     font-family: "Nunito Sans", sans-serif;
     font-size: 22px;
 
-    padding: 20px;
-    margin-top: 30px;
-    border: 3px solid cadetblue;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+
 }
 
+.image-banner {
+    width: 100%;
+    max-width: 100%;
+    object-fit:cover;
+    margin: auto;
+}
+
+.img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
 .colorFondo {
     background-color: navy;
 }
 
+.telefonosutiles{
+    text-align: center;
+}
+
 /*MENU HAMBURGUESA*/
 :root {
-    --color_primario: navy;
-    --color_primario_suave: navy;
-    --color_blanco: #fff;
+    --color_primario: white;
+    --color_primario_suave: white;
+    --color_blanco: navy;
     --altura_header: 80px;
     --padding_left_right: 2rem;
     --ancho_maximo: 1200px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
-    background-color: rgb(227, 227, 227);
+    background-color: rgba(255, 247, 247, 0.676);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 10px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -108,16 +127,30 @@ h1.textcenter {
 }
 
 p {
-    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.block {
+    background-color: navy;
+    width: auto;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px;
+
+}
+
+
 .image-banner {
+    margin: 0 0 20px 0;
     width: 100%;
-    height: 500px;
+    height: 250px;
 }
 
 /*MENU HAMBURGUESA*/
-
 h2 {
     color: rgb(0, 0, 0);
     font-family: "Nunito Sans", sans-serif;
@@ -130,52 +163,28 @@ h2 {
 
 h3 {
     color: whitesmoke;
-    font-family: "Nunito Sans", sans-serif;
+    font-weight: bolder;
+    font-family: "open sans", sans-serif;
     font-size: 22px;
 }
 
 h4 {
     color: whitesmoke;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "open sans", sans-serif;
     font-size: 22px;
 }
 
 h5 {
     color: whitesmoke;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "open sans", sans-serif;
     font-size: 22px;
 }
 
 h6 {
     color: black;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "open sans", sans-serif;
     font-size: 22px;
 }
-
-/*
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    width: 80%;
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
-.gridimagen {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.gridimagen img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-*/
 
 @media (min-width:768px) {
     .labe_hamburguesa {
@@ -192,17 +201,22 @@ h6 {
 
     .link {
         font-size: 1.3rem;
-        transition: all .3s;
+        transition: all .4s;
         padding: .2rem .7rem;
     }
 
     .link:hover {
-        background-color: rgb(32, 32, 220);
+        background-color: rgb(231, 231, 231);
+        border-radius: 15px;
+
     }
 }
 
 
 .footercontenedor {
+    margin: 0 0 20px 0;
+    padding: 5px 0 5px 10px;
+    border-left: 5px solid navy;
     display: inline-block;
     flex-direction: column;
 }
@@ -225,76 +239,66 @@ h6 {
     height: 80px;
 }
 
-
-/*ANIMACION*/
-
-.grid {
-    max-width: 1200px;
-    width: 95%;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f0f0f0;
 }
 
-.slider .imagen-list {
-    display: grid;
-    gap: 18px;
-    font-size: 0;
-    margin-bottom: 30px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    grid-template-columns: repeat(10, 1fr);
-}
-
-.slider .imagen-list::-webkit-scrollbar {
-    display: none;
-}
-
-.slider .imagen-list .imagen-item {
-    width: 325px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.container .slider-scrollbar {
-    height: 2px;
+.carousel {
     width: 100%;
-    background: navy;
-    display: flex;
-    align-items: center;
-
-}
-
-.slider-scrollbar .scrollbar-track {
-    height: 2px;
-    width: 100%;
-    background: #ccc;
+    height: 50vh;
+    overflow: hidden;
     position: relative;
-    border-radius: 4px;
 }
 
-.slider-scrollbar:hover .scrollbar-track {
-    height: 4px;
-}
-
-.slider-scrollbar:hover .scrollbar-track:active {
-cursor: grabbing;
-height: 8px;
-top: -2px;
-}
-
-.slider-scrollbar .scrollbar-thumb {
-    position: absolute;
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     height: 100%;
-    width: 50%;
-    background: black;
-    border-radius: inherit;
-    cursor: grab;
 }
 
-.slider-scrollbar .scrollbar-thumb::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -10px;
-    bottom: -10px;
-
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
+
+.navigation button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.blogsaludtitulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: blue;
+}
+
+
+.blogsaludfecha {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color:rgb(0, 176, 117);
+}
+
+.blogsaludinfo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #585858;
+    }

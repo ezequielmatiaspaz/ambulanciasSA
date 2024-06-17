@@ -1,17 +1,11 @@
-@import "./utilities/variables";
-@import "./utilities/mixin";
-@import "./utilities/extend";
+@import 'variables';
 
-@import "./utilities/reset";
-@import "./utilities/global";
+.header {
+    height: $header-height;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-@import "./componets/header";
-@import "./page/main-atencionpersonalizada";
-@import "./page/main-blogsalud";
-@import "./page/main-consultas";
-@import "./page/main-empresas";
-@import "./page/main-planesdesalud";
-@import "./componets/footer";
-
-
-@import "./utilities/mediaQuerie";
+    @import 'header';
+}
