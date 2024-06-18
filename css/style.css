@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-*
-
-/*URGENCIAS TELEFONO*/
 h1 {
     color: white;
     font-family: "Nunito Sans", sans-serif;
@@ -19,24 +16,27 @@ h1 {
 .image-banner {
     width: 100%;
     max-width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     margin: auto;
 }
 
-.img{
+.img {
     width: 100%;
     border-radius: 15px;
     box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
 }
+
 .colorFondo {
     background-color: navy;
 }
 
-.telefonosutiles{
+.telefonosutiles {
     text-align: center;
 }
 
-/*MENU HAMBURGUESA*/
+
+
+
 :root {
     --color_primario: white;
     --color_primario_suave: white;
@@ -150,7 +150,9 @@ p {
     height: 250px;
 }
 
-/*MENU HAMBURGUESA*/
+
+
+
 h2 {
     color: rgb(0, 0, 0);
     font-family: "Nunito Sans", sans-serif;
@@ -275,7 +277,7 @@ body {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit:cover ;
+    object-fit: cover;
 }
 
 
@@ -294,11 +296,11 @@ body {
 .blogsaludfecha {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color:rgb(0, 176, 117);
+    color: rgb(0, 176, 117);
 }
 
-.blogsaludinfo{
+.blogsaludinfo {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #585858;
-    }
+}

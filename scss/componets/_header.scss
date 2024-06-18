@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: navy;
+}
+.colorFondo {
+    background-color: navy;
+}
+
+.header {
+    height: var(80px);
+    background-color: var(white);
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(2rem);
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.menu_hamburguesa:checked+.ul_links {
+    height: calc(100vh - var(80px));
+}
+
+.logo {
+    color: var(navy);
+}
+
+.list_icon {
+    color: var(navy);
+    cursor: pointer;
+}
+
+.ul_links {
+    width: 100%;
+    background-color: var(white);
+    position: absolute;
+    top: var(80px);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+}
+
+.link {
+    font-size: 3em;
+    color: var(navy);
+    font-weight: bold;
+}
+
+h1.textcenter {
+    text-align: center;
+}
+
+
+
+
+@media (min-width:768px) {
+    .labe_hamburguesa {
+        display: none;
+    }
+
+    .ul_links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .link {
+        font-size: 1.3rem;
+        transition: all .4s;
+        padding: .2rem .7rem;
+    }
+
+    .link:hover {
+        background-color: rgb(231, 231, 231);
+        border-radius: 15px;
+
+    }
+}

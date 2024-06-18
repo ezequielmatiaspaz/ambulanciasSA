@@ -1,0 +1,16 @@
+@mixin header-styles {
+    height: $altura_header;
+    background-color: $color_primario;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive-container {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 0 $padding_left_right;
+  }
